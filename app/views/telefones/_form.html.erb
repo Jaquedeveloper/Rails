@@ -1,0 +1,33 @@
+<%= form_for(@telefone) do |f| %>
+  <% if @telefone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@telefone.errors.count, "error") %> prohibited this telefone from being saved:</h2>
+
+      <ul>
+      <% @telefone.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ddd %><br />
+    <%= f.text_field :ddd %>
+  </div>
+  <div class="field">
+    <%= f.label :numero %><br />
+    <%= f.text_field :numero %>
+  </div>
+  <div class="field">
+    <%= f.label :aluno %><br />
+    <%= f.text_field :aluno %>
+  </div>
+  <div class="field">
+    <%= f.label :tipotelefone %><br />
+    <%= f.text_field :tipotelefone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

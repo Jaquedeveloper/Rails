@@ -1,4 +1,18 @@
 Sisprojetop3::Application.routes.draw do
+  resources :turmas
+
+  resources :professordisciplinas
+
+  resources :telefones
+
+  resources :alunos
+
+  resources :tipotelefones
+
+  resources :disciplinas
+
+  resources :professors
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

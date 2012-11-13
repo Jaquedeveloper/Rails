@@ -1,0 +1,33 @@
+<%= form_for(@professordisciplina) do |f| %>
+  <% if @professordisciplina.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@professordisciplina.errors.count, "error") %> prohibited this professordisciplina from being saved:</h2>
+
+      <ul>
+      <% @professordisciplina.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ano %><br />
+    <%= f.text_field :ano %>
+  </div>
+  <div class="field">
+    <%= f.label :periodo %><br />
+    <%= f.text_field :periodo %>
+  </div>
+  <div class="field">
+    <%= f.label :professor %><br />
+    <%= f.text_field :professor %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina %><br />
+    <%= f.text_field :disciplina %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
