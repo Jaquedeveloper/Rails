@@ -17,7 +17,7 @@
     <td><%= aluno.sexo %></td>
     <td><%= link_to 'Show', aluno %></td>
     <td><%= link_to 'Edit', edit_aluno_path(aluno) %></td>
-    <td><%= link_to 'Destroy', aluno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Excluir', aluno, method: :delete, data: { confirm: 'Deseja excluir?' } %></td>
   </tr>
 <% end %>
 </table>

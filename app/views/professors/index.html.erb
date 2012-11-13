@@ -1,4 +1,4 @@
-<h1>Listing professors</h1>
+<h1>Listing professores</h1>
 
 <table>
   <tr>
@@ -15,7 +15,7 @@
     <td><%= professor.sexo %></td>
     <td><%= link_to 'Show', professor %></td>
     <td><%= link_to 'Edit', edit_professor_path(professor) %></td>
-    <td><%= link_to 'Destroy', professor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Excluir', professor, method: :delete, data: { confirm: 'Deseja excluir?' } %></td>
   </tr>
 <% end %>
 </table>
